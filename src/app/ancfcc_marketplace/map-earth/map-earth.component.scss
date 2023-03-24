@@ -1,0 +1,53 @@
+
+
+.earth{
+  width:380px;
+  height:380px;
+  position:absolute;
+  border-radius:50%;
+  overflow:hidden;
+  box-shadow:0 0 4px 1px #3366ff99,
+             0 0 50px 15px #3366ff15,
+             0 0 80px 20px #3366ff20;
+  left:8%;
+  top:-9%;
+  animation: earth 60s infinite linear;
+}
+.earth .bg{
+  animation: earth 60s infinite linear;
+  background:url(https://www.morocco-guide.com/images/information/morocco-map.svg) center;
+  background-size:cover;
+  width:430px;
+  height:430px;
+  position:absolute;
+  border-radius:50%;
+  box-shadow:inset 100px 0 40px #111;
+}
+.earth .cloud{
+  background:url(http://artem.anmedio.ru/dev/planet/clouds.png) center;
+  background-size:cover;
+  width:430px;
+  height:430px;
+  position:absolute;
+  border-radius:50%;
+  animation: cloud 60s infinite linear;
+  opacity:.5;
+}
+@keyframes earth{
+  0%{
+    background-position-x:0;
+    transform:rotateZ(0);
+  }
+  100%{
+    background-position-x:-1100px;
+    transform:rotateZ(-360deg);
+  }
+}
+@keyframes cloud{
+  0%{
+    background-position-x:0;
+  }
+  100%{
+    background-position-x:-1000px;
+  }
+}

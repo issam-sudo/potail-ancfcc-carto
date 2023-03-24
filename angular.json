@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "be43bd55-682e-4e61-b8ad-c8ca2a77d648"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -31,9 +34,14 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/second/css/plugins/owl-carousel/owl.carousel.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.js",
+              "src/assets/second/js/owl.carousel.min.js"
+
+            ]
           },
           "configurations": {
             "production": {
@@ -99,9 +107,14 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/second/css/plugins/owl-carousel/owl.carousel.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.js",
+              "assets/second/js/owl.carousel.min.js"
+
+            ]
           }
         }
       }
