@@ -9,7 +9,7 @@ const routes: Routes = [
 {path:'portail/home', component:HomeComponent},
 //{path:'about', component:AboutComponent},
 {path:'cartographie/marketplace', component:MarketplaceCartoComponent},
-{path:'**', component:HomeComponent},
+{path:'**', component:MarketplaceCartoComponent},
 
 ];
 
